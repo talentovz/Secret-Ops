@@ -1,0 +1,40 @@
+header {
+    width: 40%;
+    background: rgb(255, 179, 0);
+    top: 0;
+  }
+  
+  button {
+    width: 119px;
+    border: 0;
+    background-image: linear-gradient(150deg,#f56200,#000,#791a1a);
+    border-radius: 8px;
+    color: #ffffff;
+    display: flex;
+    font-size: 13px;
+    padding: 4px;
+    transition: 0.1s;
+  }
+  
+  button span {
+    background-color: #111;
+    padding: 18px 18px;
+    border-radius: 6px;
+    transition: 3s;
+  }
+  
+  button a {
+    padding: 19px 19px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+  }
+  
+  button:hover span{
+    background: none;
+  }
+  
+  button:active {
+    transform: scale(0.9);  
+  }

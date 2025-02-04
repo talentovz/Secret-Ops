@@ -326,11 +326,17 @@ hr {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
-
-
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background:#000000; */
+}
 
 .wrapper {
   position: relative;
@@ -338,13 +344,9 @@ hr {
   height: 500px;
   background: #000000;
   box-shadow: 0 0 50px #e97102; 
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 40px;
-  overflow: hidden;
-}
-
-.wrapper:hover {
-  animation: animate 1s linear infinite;
+  /*overflow: hidden;*/
 }
 
 @keyframes animate {
@@ -372,7 +374,7 @@ hr {
   left: 0;
 }
 
-.wrapper.active .form-wrapper.sign-in  {
+.wrapper.active .form-wrapper.sign-up  {
   transform: translateY(-450px);
 }
 
@@ -459,4 +461,91 @@ button {
 
 .signUp-link p :hover {
   text-decoration: underline;
+}
+
+main{
+  margin-top: 100px;
+}
+
+header {
+  width: 40%;
+  background: rgb(255, 179, 0);
+  top: 0;
+}
+
+button {
+  width: 119px;
+  border: 0;
+  background-image: linear-gradient(150deg,#f56200,#000,#791a1a);
+  border-radius: 8px;
+  color: #ffffff;
+  display: flex;
+  font-size: 13px;
+  padding: 4px;
+  transition: 0.1s;
+}
+
+button span {
+  background-color: #111;
+  padding: 11px 14px;
+  border-radius: 6px;
+  transition: 3s;
+}
+
+button a {
+  padding: 1px 1px;
+  font-size: 12.1px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: auto;
+}
+
+button:hover span{
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);  
+}
+
+
+header {
+  width: 40%;
+  background: rgb(255, 179, 0);
+  top: 0;
+}
+
+button {
+  width: 119px;
+  border: 0;
+  background-image: linear-gradient(150deg,#f56200,#000,#791a1a);
+  border-radius: 8px;
+  color: #ffffff;
+  display: flex;
+  font-size: 13px;
+  padding: 4px;
+  transition: 0.1s;
+}
+
+button span {
+  background-color: #111;
+  padding: 11px 14px;
+  border-radius: 6px;
+  transition: 3s;
+}
+
+button a {
+  padding: 1px 1px;
+  font-size: 12.1px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+button:hover span{
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);  
 }
